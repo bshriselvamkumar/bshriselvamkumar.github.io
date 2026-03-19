@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Nithesh Tech</title>
+  <title>Nithesh Learn Hub</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
@@ -10,21 +10,10 @@
       padding: 0;
       box-sizing: border-box;
       font-family: Arial;
-      scroll-behavior: smooth;
     }
 
     body {
-      background: #f8fafc;
-    }
-
-    /* TOP BAR */
-    .topbar {
-      background: #0f172a;
-      color: white;
-      padding: 8px 50px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 14px;
+      background: #f1f5f9;
     }
 
     /* NAVBAR */
@@ -32,7 +21,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 15px 50px;
+      padding: 15px 40px;
       background: white;
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
@@ -44,252 +33,110 @@
     nav ul {
       display: flex;
       list-style: none;
-      gap: 25px;
+      gap: 20px;
     }
 
-    nav ul li a {
-      text-decoration: none;
-      color: black;
+    nav ul li {
+      cursor: pointer;
       font-weight: bold;
     }
 
-    nav ul li a:hover {
+    nav ul li:hover {
       color: #2563eb;
     }
 
-    /* HERO */
-    .hero {
-      position: relative;
-      overflow: hidden;
-      background: linear-gradient(to right, #2563eb, #1d4ed8);
-      color: white;
-      padding: 80px 50px;
-    }
-
-    .slides {
-      position: relative;
-    }
-
-    .slide {
-      display: none;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-
-    .slide.active {
-      display: flex;
-      animation: fade 1s ease;
-    }
-
-    .slide img {
-      width: 350px;
-    }
-
-    .hero-text {
-      max-width: 500px;
-    }
-
-    .hero-text h1 {
-      font-size: 40px;
-      margin: 20px 0;
-    }
-
-    button {
-      padding: 10px 25px;
-      border-radius: 25px;
-      border: none;
-      background: white;
-      color: #2563eb;
-      cursor: pointer;
-    }
-
-    @keyframes fade {
-      from {opacity: 0;}
-      to {opacity: 1;}
-    }
-
-    /* FLOATING SHAPES */
-    .shapes span {
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      background: rgba(255,255,255,0.3);
-      border-radius: 50%;
-      animation: float 6s infinite;
-    }
-
-    .shapes span:nth-child(1) {
-      top: 20%;
-      left: 10%;
-    }
-    .shapes span:nth-child(2) {
-      top: 60%;
-      left: 80%;
-    }
-    .shapes span:nth-child(3) {
-      top: 40%;
-      left: 50%;
-    }
-
-    @keyframes float {
-      0% { transform: translateY(0); }
-      50% { transform: translateY(-30px); }
-      100% { transform: translateY(0); }
-    }
-
-    /* SECTIONS */
+    /* SECTION */
     section {
-      padding: 60px 50px;
-      text-align: center;
+      padding: 40px;
     }
 
     h2 {
-      margin-bottom: 20px;
       color: #2563eb;
+      margin-bottom: 20px;
+      border-left: 5px solid #2563eb;
+      padding-left: 10px;
     }
 
-    .services {
-      display: flex;
-      gap: 20px;
-      justify-content: center;
-      flex-wrap: wrap;
+    /* GRID */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
     }
 
-    .card {
-      background: white;
-      padding: 20px;
-      width: 250px;
+    .box {
+      background: #e2e8f0;
+      padding: 12px;
       border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      text-decoration: none;
+      color: black;
       transition: 0.3s;
     }
 
-    .card:hover {
-      transform: translateY(-10px);
-    }
-
-    footer {
-      background: #0f172a;
+    .box:hover {
+      background: #2563eb;
       color: white;
-      text-align: center;
-      padding: 20px;
+      transform: scale(1.05);
     }
   </style>
 </head>
 
 <body>
 
-  <!-- TOP BAR -->
-  <div class="topbar">
-    <span>📞 +91 9876543210</span>
-    <span>📧 nithesh@email.com</span>
-  </div>
-
   <!-- NAVBAR -->
   <nav>
-    <h2>NitheshTech</h2>
+    <h2>🧠 NitheshLearnHub</h2>
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li>Job Portal</li>
+      <li>Courses</li>
+      <li>AI Tools</li>
+      <li>Docs</li>
     </ul>
   </nav>
 
-  <!-- HERO -->
-  <div class="hero">
+  <!-- JOB PORTAL -->
+  <section>
+    <h2>💼 Job Portal</h2>
+    <div class="grid">
 
-    <div class="shapes">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+      <a href="https://weworkremotely.com" target="_blank" class="box">We Work Remotely</a>
+      <a href="https://justremote.co" target="_blank" class="box">Just Remote</a>
+      <a href="https://www.flexjobs.com" target="_blank" class="box">FlexJobs</a>
+      <a href="https://www.naukri.com" target="_blank" class="box">Naukri</a>
+      <a href="https://www.linkedin.com/jobs" target="_blank" class="box">LinkedIn</a>
+      <a href="https://www.indeed.com" target="_blank" class="box">Indeed</a>
 
-    <div class="slides">
-
-      <div class="slide active">
-        <div class="hero-text">
-          <p>At Nithesh Tech, We provide</p>
-          <h1><span class="typing"></span></h1>
-          <button>ENQUIRE NOW</button>
-        </div>
-        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png">
-      </div>
-
-      <div class="slide">
-        <div class="hero-text">
-          <p>We build modern solutions</p>
-          <h1>AI, Cloud & Web Development</h1>
-          <button>Get Started</button>
-        </div>
-        <img src="https://cdn-icons-png.flaticon.com/512/4149/4149675.png">
-      </div>
-
-    </div>
-  </div>
-
-  <!-- ABOUT -->
-  <section id="about">
-    <h2>About Us</h2>
-    <p>We build innovative tech solutions and train students.</p>
-  </section>
-
-  <!-- SERVICES -->
-  <section id="services">
-    <h2>Our Services</h2>
-    <div class="services">
-      <div class="card">
-        <h3>Web Development</h3>
-        <p>Modern websites</p>
-      </div>
-      <div class="card">
-        <h3>AI Projects</h3>
-        <p>Chatbots & automation</p>
-      </div>
-      <div class="card">
-        <h3>Training</h3>
-        <p>Internships</p>
-      </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: nithesh@email.com</p>
+  <!-- COURSES -->
+  <section>
+    <h2>🎓 Online Courses</h2>
+    <div class="grid">
+
+      <a href="https://www.udemy.com" target="_blank" class="box">Udemy</a>
+      <a href="https://www.coursera.org" target="_blank" class="box">Coursera</a>
+      <a href="https://www.edx.org" target="_blank" class="box">edX</a>
+      <a href="https://www.freecodecamp.org" target="_blank" class="box">freeCodeCamp</a>
+      <a href="https://www.sololearn.com" target="_blank" class="box">SoloLearn</a>
+      <a href="https://learn.microsoft.com" target="_blank" class="box">Microsoft Learn</a>
+
+    </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2026 NitheshTech</p>
-  </footer>
+  <!-- AI TOOLS -->
+  <section>
+    <h2>🤖 AI Tools</h2>
+    <div class="grid">
 
-  <!-- JS -->
-  <script>
-    let slides = document.querySelectorAll(".slide");
-    let index = 0;
+      <a href="https://chat.openai.com" target="_blank" class="box">ChatGPT</a>
+      <a href="https://gemini.google.com" target="_blank" class="box">Gemini</a>
+      <a href="https://www.midjourney.com" target="_blank" class="box">Midjourney</a>
+      <a href="https://www.perplexity.ai" target="_blank" class="box">Perplexity</a>
+      <a href="https://runwayml.com" target="_blank" class="box">Runway ML</a>
 
-    setInterval(() => {
-      slides[index].classList.remove("active");
-      index = (index + 1) % slides.length;
-      slides[index].classList.add("active");
-    }, 3000);
-
-    const text = "Platform Engineering with AI & Cloud";
-    let i = 0;
-    const typing = document.querySelector(".typing");
-
-    function type() {
-      if (i < text.length) {
-        typing.innerHTML += text.charAt(i);
-        i++;
-        setTimeout(type, 50);
-      }
-    }
-
-    type();
-  </script>
+    </div>
+  </section>
 
 </body>
 </html>
