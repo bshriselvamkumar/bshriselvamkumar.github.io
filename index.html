@@ -1,24 +1,170 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Nithesh Website</title>
+  <title>Nithesh Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial;
+    }
+
+    body {
+      background: #0f172a;
+      color: white;
+    }
+
+    /* NAVBAR */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 50px;
+      background: #020617;
+      position: sticky;
+      top: 0;
+    }
+
+    nav h2 {
+      color: #38bdf8;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    nav ul li a:hover {
+      color: #38bdf8;
+    }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 50px;
+      color: #38bdf8;
+    }
+
+    .hero p {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #38bdf8;
+    }
+
+    /* PROJECTS */
+    .projects {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 10px;
+      width: 250px;
+    }
+
+    /* BUTTON */
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      border: none;
+      background: #38bdf8;
+      color: black;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0ea5e9;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+      margin-top: 20px;
+    }
+  </style>
 </head>
-<body style="font-family:Arial; text-align:center;">
 
-  <h1>👋 Welcome to My Website</h1>
-  <p>I am Nithesh. This is my first website 🚀</p>
+<body>
 
-  <h2>📌 About Me</h2>
-  <p>I am learning web development and building cool projects.</p>
+  <!-- NAVBAR -->
+  <nav>
+    <h2>Nithesh</h2>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-  <h2>💻 My Projects</h2>
-  <ul>
-    <li>Astrology Chatbot 🔮</li>
-    <li>Transcription Tool 🎤</li>
-  </ul>
+  <!-- HERO -->
+  <div class="hero">
+    <h1>🚀 Welcome to My Website</h1>
+    <p>I build cool projects & websites</p>
+  </div>
 
-  <h2>📞 Contact</h2>
-  <p>Email: your@email.com</p>
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am Nithesh, learning web development and building awesome projects.</p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Astrology Chatbot 🔮</h3>
+        <p>AI chatbot that predicts and answers astrology queries.</p>
+      </div>
+
+      <div class="card">
+        <h3>Transcription Tool 🎤</h3>
+        <p>Converts audio into text automatically.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: your@email.com</p>
+    <button onclick="alert('Message sent!')">Send Message</button>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Nithesh | Built with ❤️</p>
+  </footer>
 
 </body>
 </html>
