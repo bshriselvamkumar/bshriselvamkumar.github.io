@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Nithesh Portfolio</title>
+  <title>Nithesh Tech</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
@@ -13,157 +13,196 @@
     }
 
     body {
+      background: #f8fafc;
+    }
+
+    /* TOP BAR */
+    .topbar {
       background: #0f172a;
       color: white;
+      padding: 8px 50px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
     }
 
     /* NAVBAR */
     nav {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       padding: 15px 50px;
-      background: #020617;
-      position: sticky;
-      top: 0;
+      background: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
 
     nav h2 {
-      color: #38bdf8;
+      color: #2563eb;
     }
 
     nav ul {
       display: flex;
       list-style: none;
-      gap: 20px;
+      gap: 25px;
     }
 
     nav ul li a {
-      color: white;
       text-decoration: none;
+      color: black;
+      font-weight: bold;
     }
 
     nav ul li a:hover {
-      color: #38bdf8;
+      color: #2563eb;
     }
 
-    /* HERO */
+    /* HERO SECTION */
     .hero {
-      text-align: center;
-      padding: 100px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 80px 50px;
+      background: linear-gradient(to right, #2563eb, #3b82f6);
+      color: white;
+      flex-wrap: wrap;
     }
 
-    .hero h1 {
-      font-size: 50px;
-      color: #38bdf8;
+    .hero-text {
+      max-width: 500px;
     }
 
-    .hero p {
-      margin-top: 10px;
-      font-size: 18px;
+    .hero-text h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
     }
 
-    /* SECTIONS */
+    .hero-text p {
+      margin-bottom: 20px;
+    }
+
+    .hero-text button {
+      padding: 12px 25px;
+      border: none;
+      background: white;
+      color: #2563eb;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .hero img {
+      width: 350px;
+      margin-top: 20px;
+    }
+
+    /* SECTION */
     section {
-      padding: 60px 20px;
+      padding: 60px 50px;
       text-align: center;
     }
 
     h2 {
       margin-bottom: 20px;
-      color: #38bdf8;
+      color: #2563eb;
     }
 
-    /* PROJECTS */
-    .projects {
+    /* SERVICES */
+    .services {
       display: flex;
-      justify-content: center;
       gap: 20px;
+      justify-content: center;
       flex-wrap: wrap;
     }
 
     .card {
-      background: #1e293b;
+      background: white;
       padding: 20px;
-      border-radius: 10px;
       width: 250px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     }
 
-    /* BUTTON */
-    button {
-      margin-top: 15px;
-      padding: 10px 20px;
-      border: none;
-      background: #38bdf8;
-      color: black;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background: #0ea5e9;
+    .card:hover {
+      transform: translateY(-10px);
+      transition: 0.3s;
     }
 
     /* FOOTER */
     footer {
+      background: #0f172a;
+      color: white;
       text-align: center;
       padding: 20px;
-      background: #020617;
-      margin-top: 20px;
     }
   </style>
 </head>
 
 <body>
 
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <span>📞 +91 9876543210</span>
+    <span>📧 nithesh@email.com</span>
+  </div>
+
   <!-- NAVBAR -->
   <nav>
-    <h2>Nithesh</h2>
+    <h2>NitheshTech</h2>
     <ul>
       <li><a href="#">Home</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
+      <li><a href="#services">Services</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
   <!-- HERO -->
   <div class="hero">
-    <h1>🚀 Welcome to My Website</h1>
-    <p>I build cool projects & websites</p>
+    <div class="hero-text">
+      <h1>Platform Engineering with Modern Technologies</h1>
+      <p>We build solutions using AI, Cloud, Web & Automation.</p>
+      <button>Enquire Now</button>
+    </div>
+
+    <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png">
   </div>
 
   <!-- ABOUT -->
   <section id="about">
-    <h2>About Me</h2>
-    <p>I am Nithesh, learning web development and building awesome projects.</p>
+    <h2>About Us</h2>
+    <p>We are a tech team building innovative solutions and training students.</p>
   </section>
 
-  <!-- PROJECTS -->
-  <section id="projects">
-    <h2>My Projects</h2>
-    <div class="projects">
+  <!-- SERVICES -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
       <div class="card">
-        <h3>Astrology Chatbot 🔮</h3>
-        <p>AI chatbot that predicts and answers astrology queries.</p>
+        <h3>Web Development</h3>
+        <p>Modern websites and apps</p>
       </div>
 
       <div class="card">
-        <h3>Transcription Tool 🎤</h3>
-        <p>Converts audio into text automatically.</p>
+        <h3>AI Projects</h3>
+        <p>Chatbots & automation</p>
+      </div>
+
+      <div class="card">
+        <h3>Training</h3>
+        <p>Internships & courses</p>
       </div>
     </div>
   </section>
 
   <!-- CONTACT -->
   <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: your@email.com</p>
-    <button onclick="alert('Message sent!')">Send Message</button>
+    <h2>Contact Us</h2>
+    <p>Email: nithesh@email.com</p>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2026 Nithesh | Built with ❤️</p>
+    <p>© 2026 NitheshTech</p>
   </footer>
 
 </body>
